@@ -1,6 +1,6 @@
 const LinksSocialMedia = {
   github: "FernandoPatrick",
-  youtube: "channel/UC7CQ7kXLizLlB23QasPi_KA",
+  // youtube: "channel/UC7CQ7kXLizLlB23QasPi_KA",
   facebook: "fernndopatrick",
   instagram: "fernandoupatrick",
   twitter: "Fernand34796788",
