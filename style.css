@@ -9,7 +9,7 @@ html, body {
 }
 
 body {
-  background: linear-gradient(rgb(221, 75, 75), rgb(153, 152, 152), black);
+  background: linear-gradient(rgb(221, 75, 75), rgb(153, 152, 152), black) no-repeat center/cover;
   --black: hsl(240, 6%, 13%);
   --grey: hsl(240, 9%, 89%);
   display: grid;
@@ -17,10 +17,9 @@ body {
 }
 
 main {
-  background: url(imagens/background.svg) no-repeat center/cover;
-  width: 100vw;
-  min-height: 812px;
-  height: 100vh;
+  background: url(imagens/background.svg);
+  width: 375px;
+  height: 812px;
 }
 
 .container {
@@ -76,4 +75,10 @@ ul {
   display: flex;
   gap: 0.5rem;
   justify-content: center;
+}
+
+@media screen and (max-width: 200px) {
+  .icones {
+    display: inline-block;
+  }
 }
