@@ -24,34 +24,34 @@
               title="Selo Rocketseat"
             />
           </span>
-          <img id="UserPhoto"
+          <img
             src="imagens/fotopessoal.jpeg"
             alt="Foto pessoal"
             title="Foto pessoal"
           />
         </div>
         <h1 id="userName">Fernando Patrick</h1>
-        <a id="userLink" href="https://github.com/FernandoPatrick" target="_blank">
+        <a href="https://github.com/FernandoPatrick" target="_blank">
           <img
             src="imagens/github.svg"
             alt="ícone github"
             title="ícone github"
-          /> <span id="userLogin">FernandoPatrick</span></a
+          />FernandoPatrick</a
         >
-        <p id="userBio">Student - Systems Analysis and Development</p>
+        <p>Student - Systems Analysis and Development</p>
 
         <ul id="socialLinks">
           <li class="youtube">
-            <a href="https://www.youtube.com" target="_blank"
+            <a href="https://youtube.com" target="_blank"
               ><img
-                src="imagens/Youtube.svg"
+                src="imagens/youtube.svg"
                 alt="ícone youtube"
                 title="ícone youtube"
             /></a>
           </li>
           <li class="instagram">
             <a
-              href="https://www.instagram.com/fernandoupatrick//"
+              href="https://www.instagram.com/fernandoupatrick/"
               target="_blank"
               ><img
                 src="imagens/instagram.svg"
@@ -65,12 +65,13 @@
                 src="imagens/facebook.svg"
                 alt="ícone facebook"
                 title="ícone facebook"
+                target="_blank"
             /></a>
           </li>
           <li class="twitter">
             <a href="https://twitter.com/Fernand34796788" target="_blank"
               ><img
-                src="imagens/Twitter.svg"
+                src="imagens/twitter.svg"
                 alt="ícone twitter"
                 title="ícone twitter"
             /></a>
@@ -78,7 +79,32 @@
         </ul>
       </div>
     </main>
-    <script src="main.js"></script>
-     
+    <script>
+      const LinksSocialMedia = {
+        github: "FernandoPatrick",
+        youtube: "youtube.com",
+        facebook: "fernndopatrick",
+        instagram: "fernndoupatrick",
+        twitter: "Fernand34796788",
+      };
+
+      function changeSocialMediaLinks() {
+        for (let li of socialLinks.children) {
+          const social = li.getAttribute("class");
+
+          li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}`;
+
+          alert(li.children[0].href);
+        }
+      }
+
+      // i = i + 1
+      // i++
+
+      // ser humano 12345678910
+      //computador 0123456789
+
+      changeSocialMediaLinks();
+    </script>
   </body>
 </html>

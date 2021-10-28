@@ -9,7 +9,8 @@ html, body {
 }
 
 body {
-  background: linear-gradient(rgb(221, 75, 75), rgb(153, 152, 152), black) no-repeat center/cover;
+  background: linear-gradient(rgb(221, 75, 75), rgb(153, 152, 152), black);
+
   --black: hsl(240, 6%, 13%);
   --grey: hsl(240, 9%, 89%);
   display: grid;
@@ -27,6 +28,7 @@ main {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+
   color: var(--grey);
 }
 
@@ -42,7 +44,7 @@ main {
   z-index: 1;
 }
 
-.avatar>img {
+.avatar > img {
   width: 10rem;
   height: 11.5rem;
   object-fit: cover;
@@ -55,7 +57,7 @@ h1 {
 }
 
 a {
-  color: var(--grey);
+  color: var(--grey) ;
   text-decoration: none;
   margin-top: 0.25rem;
   display: flex;
@@ -75,10 +77,4 @@ ul {
   display: flex;
   gap: 0.5rem;
   justify-content: center;
-}
-
-@media screen and (max-width: 200px) {
-  .icones {
-    display: inline-block;
-  }
 }
