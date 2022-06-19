@@ -10,7 +10,9 @@ html, body {
 
 body {
   background: linear-gradient(rgb(221, 75, 75), rgb(153, 152, 152), black);
-
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   --black: hsl(240, 6%, 13%);
   --grey: hsl(240, 9%, 89%);
   display: grid;
