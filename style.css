@@ -15,14 +15,15 @@ body {
   background-size: cover;
   --black: hsl(240, 6%, 13%);
   --grey: hsl(240, 9%, 89%);
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 main {
   background: url(imagens/background.svg);
   width: 375px;
-  height: 812px;
+  height: 100%;
 }
 
 .container {
@@ -73,7 +74,7 @@ p {
 }
 
 ul {
-  margin-top: 4rem;
+  margin-top: 3rem;
   list-style: none;
   padding: 0;
   display: flex;
